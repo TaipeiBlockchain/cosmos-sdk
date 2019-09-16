@@ -8,15 +8,15 @@ cd projects
 wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
 
-echo "export PATH=$PATH:/usr/local/go/bin" > /etc/profile
+echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile
 source /etc/profile
 go version
 
 mkdir -p $HOME/go/bin
-echo "export GOPATH=$HOME/go" > /etc/profile
-echo "export GOBIN=\$GOPATH/bin" > /etc/profile
-echo "export PATH=\$PATH:\$GOBIN" > /etc/profile
-echo "export GO111MODULE=on" > /etc/profile
+echo "export GOPATH=$HOME/go" >> /etc/profile
+echo "export GOBIN=\$GOPATH/bin" >> /etc/profile
+echo "export PATH=\$PATH:\$GOBIN" >> /etc/profile
+echo "export GO111MODULE=on" >> /etc/profile
 source /etc/profile
 
 git clone https://github.com/cosmos/sdk-application-tutorial.git
