@@ -1,8 +1,8 @@
 # cosmos-sdk
 
 ```bash
-apt-get update
-apt-get install -y g++ gcc libc6-dev make git curl unzip nano
+sudo apt-get update
+sudo apt-get install -y g++ gcc libc6-dev make git curl unzip nano
 
 cd projects
 wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz
